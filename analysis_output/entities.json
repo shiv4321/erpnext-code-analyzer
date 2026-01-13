@@ -1,0 +1,5925 @@
+[
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "is_valid_url",
+        "line": 18,
+        "args": [
+          "url"
+        ]
+      },
+      {
+        "name": "is_documentation_link",
+        "line": 23,
+        "args": [
+          "word"
+        ]
+      },
+      {
+        "name": "contains_documentation_link",
+        "line": 39,
+        "args": [
+          "body"
+        ]
+      },
+      {
+        "name": "check_pull_request",
+        "line": 43,
+        "args": [
+          "number"
+        ]
+      }
+    ],
+    "imports": [
+      "sys",
+      "urllib.parse",
+      "requests"
+    ],
+    "file": ".github\\helper\\documentation.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [
+      "re",
+      "sys"
+    ],
+    "file": ".github\\helper\\translation.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "ERPNextDeprecationError",
+        "line": 28,
+        "methods": []
+      },
+      {
+        "name": "ERPNextDeprecationWarning",
+        "line": 35,
+        "methods": []
+      },
+      {
+        "name": "PendingERPNextDeprecationWarning",
+        "line": 39,
+        "methods": []
+      },
+      {
+        "name": "V15ERPNextDeprecationWarning",
+        "line": 53,
+        "methods": []
+      },
+      {
+        "name": "V16ERPNextDeprecationWarning",
+        "line": 57,
+        "methods": []
+      },
+      {
+        "name": "V17ERPNextDeprecationWarning",
+        "line": 61,
+        "methods": []
+      }
+    ],
+    "functions": [
+      {
+        "name": "__get_deprecation_class",
+        "line": 65,
+        "args": [
+          "graduation",
+          "class_name"
+        ]
+      },
+      {
+        "name": "deprecated",
+        "line": 77,
+        "args": [
+          "original",
+          "marked",
+          "graduation",
+          "msg",
+          "stacklevel"
+        ]
+      },
+      {
+        "name": "deprecation_warning",
+        "line": 102,
+        "args": [
+          "marked",
+          "graduation",
+          "msg"
+        ]
+      },
+      {
+        "name": "taxes_and_totals_get_itemised_taxable_amount",
+        "line": 130,
+        "args": [
+          "items"
+        ]
+      },
+      {
+        "name": "get_pos_profile_item_details",
+        "line": 148,
+        "args": [
+          "company",
+          "ctx",
+          "pos_profile",
+          "update_data"
+        ]
+      },
+      {
+        "name": "get_item_warehouse",
+        "line": 160,
+        "args": [
+          "item",
+          "ctx",
+          "overwrite_warehouse",
+          "defaults"
+        ]
+      },
+      {
+        "name": "decorator",
+        "line": 87,
+        "args": [
+          "func"
+        ]
+      }
+    ],
+    "imports": [
+      "functools",
+      "re",
+      "sys",
+      "warnings",
+      "frappe.deprecation_dumpster",
+      "frappe",
+      "erpnext.stock.get_item_details",
+      "erpnext.stock.get_item_details"
+    ],
+    "file": "erpnext\\deprecation_dumpster.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "PartyFrozen",
+        "line": 5,
+        "methods": []
+      },
+      {
+        "name": "InvalidAccountCurrency",
+        "line": 9,
+        "methods": []
+      },
+      {
+        "name": "InvalidCurrency",
+        "line": 13,
+        "methods": []
+      },
+      {
+        "name": "PartyDisabled",
+        "line": 17,
+        "methods": []
+      },
+      {
+        "name": "InvalidAccountDimensionError",
+        "line": 21,
+        "methods": []
+      },
+      {
+        "name": "MandatoryAccountDimensionError",
+        "line": 25,
+        "methods": []
+      },
+      {
+        "name": "ReportingCurrencyExchangeNotFoundError",
+        "line": 29,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe"
+    ],
+    "file": "erpnext\\exceptions.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\hooks.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "get_default_company",
+        "line": 12,
+        "args": [
+          "user"
+        ]
+      },
+      {
+        "name": "get_default_currency",
+        "line": 28,
+        "args": []
+      },
+      {
+        "name": "get_default_cost_center",
+        "line": 35,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "get_company_currency",
+        "line": 47,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "set_perpetual_inventory",
+        "line": 58,
+        "args": [
+          "enable",
+          "company"
+        ]
+      },
+      {
+        "name": "encode_company_abbr",
+        "line": 67,
+        "args": [
+          "name",
+          "company",
+          "abbr"
+        ]
+      },
+      {
+        "name": "is_perpetual_inventory_enabled",
+        "line": 78,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "get_default_finance_book",
+        "line": 93,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "get_party_account_type",
+        "line": 108,
+        "args": [
+          "party_type"
+        ]
+      },
+      {
+        "name": "get_region",
+        "line": 120,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "allow_regional",
+        "line": 135,
+        "args": [
+          "fn"
+        ]
+      },
+      {
+        "name": "check_app_permission",
+        "line": 157,
+        "args": []
+      },
+      {
+        "name": "normalize_ctx_input",
+        "line": 170,
+        "args": [
+          "T"
+        ]
+      },
+      {
+        "name": "caller",
+        "line": 144,
+        "args": []
+      },
+      {
+        "name": "decorator",
+        "line": 178,
+        "args": [
+          "func"
+        ]
+      },
+      {
+        "name": "wrapper",
+        "line": 181,
+        "args": [
+          "ctx"
+        ]
+      }
+    ],
+    "imports": [
+      "functools",
+      "inspect",
+      "typing",
+      "frappe",
+      "frappe.model.document",
+      "frappe.utils.user",
+      "frappe.defaults"
+    ],
+    "file": "erpnext\\__init__.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "validate_service_stop_date",
+        "line": 25,
+        "args": [
+          "doc"
+        ]
+      },
+      {
+        "name": "build_conditions",
+        "line": 56,
+        "args": [
+          "process_type",
+          "account",
+          "company"
+        ]
+      },
+      {
+        "name": "convert_deferred_expense_to_expense",
+        "line": 70,
+        "args": [
+          "deferred_process",
+          "start_date",
+          "end_date",
+          "conditions"
+        ]
+      },
+      {
+        "name": "convert_deferred_revenue_to_income",
+        "line": 100,
+        "args": [
+          "deferred_process",
+          "start_date",
+          "end_date",
+          "conditions"
+        ]
+      },
+      {
+        "name": "get_booking_dates",
+        "line": 129,
+        "args": [
+          "doc",
+          "item",
+          "posting_date",
+          "prev_posting_date"
+        ]
+      },
+      {
+        "name": "calculate_monthly_amount",
+        "line": 192,
+        "args": [
+          "doc",
+          "item",
+          "last_gl_entry",
+          "start_date",
+          "end_date",
+          "total_days",
+          "total_booking_days",
+          "account_currency"
+        ]
+      },
+      {
+        "name": "calculate_amount",
+        "line": 247,
+        "args": [
+          "doc",
+          "item",
+          "last_gl_entry",
+          "total_days",
+          "total_booking_days",
+          "account_currency"
+        ]
+      },
+      {
+        "name": "get_already_booked_amount",
+        "line": 273,
+        "args": [
+          "doc",
+          "item"
+        ]
+      },
+      {
+        "name": "book_deferred_income_or_expense",
+        "line": 319,
+        "args": [
+          "doc",
+          "deferred_process",
+          "posting_date"
+        ]
+      },
+      {
+        "name": "process_deferred_accounting",
+        "line": 433,
+        "args": [
+          "posting_date"
+        ]
+      },
+      {
+        "name": "make_gl_entries",
+        "line": 465,
+        "args": [
+          "doc",
+          "credit_account",
+          "debit_account",
+          "against",
+          "amount",
+          "base_amount",
+          "posting_date",
+          "project",
+          "account_currency",
+          "cost_center",
+          "item",
+          "deferred_process"
+        ]
+      },
+      {
+        "name": "send_mail",
+        "line": 538,
+        "args": [
+          "deferred_process"
+        ]
+      },
+      {
+        "name": "book_revenue_via_journal_entry",
+        "line": 548,
+        "args": [
+          "doc",
+          "credit_account",
+          "debit_account",
+          "amount",
+          "base_amount",
+          "posting_date",
+          "project",
+          "account_currency",
+          "cost_center",
+          "item",
+          "deferred_process",
+          "submit"
+        ]
+      },
+      {
+        "name": "get_deferred_booking_accounts",
+        "line": 616,
+        "args": [
+          "doctype",
+          "voucher_detail_no",
+          "dr_or_cr"
+        ]
+      },
+      {
+        "name": "_book_deferred_revenue_or_expense",
+        "line": 324,
+        "args": [
+          "item",
+          "via_journal_entry",
+          "submit_journal_entry",
+          "book_deferred_entries_based_on",
+          "prev_posting_date"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.email",
+      "frappe.utils",
+      "erpnext.accounts.doctype.accounting_dimension.accounting_dimension",
+      "erpnext.accounts.utils",
+      "erpnext.accounts.general_ledger"
+    ],
+    "file": "erpnext\\accounts\\deferred_revenue.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "make_gl_entries",
+        "line": 29,
+        "args": [
+          "gl_map",
+          "cancel",
+          "adv_adj",
+          "merge_entries",
+          "update_outstanding",
+          "from_repost"
+        ]
+      },
+      {
+        "name": "make_acc_dimensions_offsetting_entry",
+        "line": 71,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "get_accounting_dimensions_for_offsetting_entry",
+        "line": 107,
+        "args": [
+          "gl_map",
+          "company"
+        ]
+      },
+      {
+        "name": "validate_disabled_accounts",
+        "line": 135,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "validate_accounting_period",
+        "line": 154,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "process_gl_map",
+        "line": 189,
+        "args": [
+          "gl_map",
+          "merge_entries",
+          "precision",
+          "from_repost"
+        ]
+      },
+      {
+        "name": "distribute_gl_based_on_cost_center_allocation",
+        "line": 204,
+        "args": [
+          "gl_map",
+          "precision",
+          "from_repost"
+        ]
+      },
+      {
+        "name": "get_cost_center_allocation_data",
+        "line": 248,
+        "args": [
+          "company",
+          "posting_date",
+          "cost_center"
+        ]
+      },
+      {
+        "name": "merge_similar_entries",
+        "line": 274,
+        "args": [
+          "gl_map",
+          "precision"
+        ]
+      },
+      {
+        "name": "get_merge_properties",
+        "line": 330,
+        "args": [
+          "dimensions"
+        ]
+      },
+      {
+        "name": "get_merge_key",
+        "line": 350,
+        "args": [
+          "entry",
+          "merge_properties"
+        ]
+      },
+      {
+        "name": "check_if_in_list",
+        "line": 358,
+        "args": [
+          "gle",
+          "gl_map"
+        ]
+      },
+      {
+        "name": "toggle_debit_credit_if_negative",
+        "line": 364,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "save_entries",
+        "line": 407,
+        "args": [
+          "gl_map",
+          "adv_adj",
+          "update_outstanding",
+          "from_repost"
+        ]
+      },
+      {
+        "name": "make_entry",
+        "line": 425,
+        "args": [
+          "args",
+          "adv_adj",
+          "update_outstanding",
+          "from_repost"
+        ]
+      },
+      {
+        "name": "validate_cwip_accounts",
+        "line": 443,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "process_debit_credit_difference",
+        "line": 470,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "get_debit_credit_difference",
+        "line": 503,
+        "args": [
+          "gl_map",
+          "precision"
+        ]
+      },
+      {
+        "name": "get_debit_credit_allowance",
+        "line": 524,
+        "args": [
+          "voucher_type",
+          "precision"
+        ]
+      },
+      {
+        "name": "raise_debit_credit_not_equal_error",
+        "line": 533,
+        "args": [
+          "debit_credit_diff",
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "has_opening_entries",
+        "line": 541,
+        "args": [
+          "gl_map"
+        ]
+      },
+      {
+        "name": "make_round_off_gle",
+        "line": 548,
+        "args": [
+          "gl_map",
+          "debit_credit_diff",
+          "trx_cur_debit_credit_diff",
+          "precision"
+        ]
+      },
+      {
+        "name": "update_accounting_dimensions",
+        "line": 616,
+        "args": [
+          "round_off_gle"
+        ]
+      },
+      {
+        "name": "get_round_off_account_and_cost_center",
+        "line": 646,
+        "args": [
+          "company",
+          "voucher_type",
+          "voucher_no",
+          "use_company_default"
+        ]
+      },
+      {
+        "name": "make_reverse_gl_entries",
+        "line": 680,
+        "args": [
+          "gl_entries",
+          "voucher_type",
+          "voucher_no",
+          "adv_adj",
+          "update_outstanding",
+          "partial_cancel",
+          "posting_date"
+        ]
+      },
+      {
+        "name": "check_freezing_date",
+        "line": 792,
+        "args": [
+          "posting_date",
+          "company",
+          "adv_adj"
+        ]
+      },
+      {
+        "name": "validate_against_pcv",
+        "line": 816,
+        "args": [
+          "is_opening",
+          "posting_date",
+          "company"
+        ]
+      },
+      {
+        "name": "set_as_cancel",
+        "line": 834,
+        "args": [
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "validate_allowed_dimensions",
+        "line": 846,
+        "args": [
+          "gl_entry",
+          "dimension_filter_map"
+        ]
+      }
+    ],
+    "imports": [
+      "copy",
+      "frappe",
+      "frappe",
+      "frappe.model.meta",
+      "frappe.utils",
+      "frappe.utils.caching",
+      "frappe.utils.dashboard",
+      "erpnext",
+      "erpnext.accounts.doctype.accounting_dimension.accounting_dimension",
+      "erpnext.accounts.doctype.accounting_dimension_filter.accounting_dimension_filter",
+      "erpnext.accounts.doctype.accounting_period.accounting_period",
+      "erpnext.accounts.doctype.budget.budget",
+      "erpnext.accounts.utils",
+      "erpnext.controllers.budget_controller",
+      "erpnext.exceptions"
+    ],
+    "file": "erpnext\\accounts\\general_ledger.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "DuplicatePartyAccountError",
+        "line": 54,
+        "methods": []
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_party_details",
+        "line": 59,
+        "args": [
+          "party",
+          "account",
+          "party_type",
+          "company",
+          "posting_date",
+          "bill_date",
+          "price_list",
+          "currency",
+          "doctype",
+          "ignore_permissions",
+          "fetch_payment_terms_template",
+          "party_address",
+          "company_address",
+          "shipping_address",
+          "dispatch_address",
+          "pos_profile"
+        ]
+      },
+      {
+        "name": "_get_party_details",
+        "line": 101,
+        "args": [
+          "party",
+          "account",
+          "party_type",
+          "company",
+          "posting_date",
+          "bill_date",
+          "price_list",
+          "currency",
+          "doctype",
+          "ignore_permissions",
+          "fetch_payment_terms_template",
+          "party_address",
+          "company_address",
+          "shipping_address",
+          "dispatch_address",
+          "pos_profile"
+        ]
+      },
+      {
+        "name": "set_address_details",
+        "line": 185,
+        "args": [
+          "party_details",
+          "party",
+          "party_type",
+          "doctype",
+          "company",
+          "party_address",
+          "company_address",
+          "shipping_address",
+          "dispatch_address"
+        ]
+      },
+      {
+        "name": "get_regional_address_details",
+        "line": 293,
+        "args": [
+          "party_details",
+          "doctype",
+          "company"
+        ]
+      },
+      {
+        "name": "complete_contact_details",
+        "line": 297,
+        "args": [
+          "party_details"
+        ]
+      },
+      {
+        "name": "set_contact_details",
+        "line": 344,
+        "args": [
+          "party_details",
+          "party",
+          "party_type"
+        ]
+      },
+      {
+        "name": "set_other_values",
+        "line": 349,
+        "args": [
+          "party_details",
+          "party",
+          "party_type"
+        ]
+      },
+      {
+        "name": "get_default_price_list",
+        "line": 367,
+        "args": [
+          "party"
+        ]
+      },
+      {
+        "name": "set_price_list",
+        "line": 376,
+        "args": [
+          "party_details",
+          "party",
+          "party_type",
+          "given_price_list",
+          "pos"
+        ]
+      },
+      {
+        "name": "set_account_and_due_date",
+        "line": 402,
+        "args": [
+          "party",
+          "account",
+          "party_type",
+          "company",
+          "posting_date",
+          "bill_date",
+          "doctype"
+        ]
+      },
+      {
+        "name": "get_party_account",
+        "line": 421,
+        "args": [
+          "party_type",
+          "party",
+          "company",
+          "include_advance"
+        ]
+      },
+      {
+        "name": "get_party_advance_account",
+        "line": 480,
+        "args": [
+          "party_type",
+          "party",
+          "company"
+        ]
+      },
+      {
+        "name": "get_party_bank_account",
+        "line": 506,
+        "args": [
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "get_party_account_currency",
+        "line": 510,
+        "args": [
+          "party_type",
+          "party",
+          "company"
+        ]
+      },
+      {
+        "name": "get_party_gle_currency",
+        "line": 518,
+        "args": [
+          "party_type",
+          "party",
+          "company"
+        ]
+      },
+      {
+        "name": "get_party_gle_account",
+        "line": 542,
+        "args": [
+          "party_type",
+          "party",
+          "company"
+        ]
+      },
+      {
+        "name": "validate_party_gle_currency",
+        "line": 558,
+        "args": [
+          "party_type",
+          "party",
+          "company",
+          "party_account_currency"
+        ]
+      },
+      {
+        "name": "validate_party_accounts",
+        "line": 579,
+        "args": [
+          "doc"
+        ]
+      },
+      {
+        "name": "get_due_date",
+        "line": 624,
+        "args": [
+          "posting_date",
+          "party_type",
+          "party",
+          "company",
+          "bill_date",
+          "template_name"
+        ]
+      },
+      {
+        "name": "get_due_date_from_template",
+        "line": 648,
+        "args": [
+          "template_name",
+          "posting_date",
+          "bill_date"
+        ]
+      },
+      {
+        "name": "validate_due_date",
+        "line": 669,
+        "args": [
+          "posting_date",
+          "due_date",
+          "bill_date",
+          "template_name",
+          "doctype"
+        ]
+      },
+      {
+        "name": "validate_due_date_with_template",
+        "line": 683,
+        "args": [
+          "posting_date",
+          "due_date",
+          "bill_date",
+          "template_name",
+          "doctype"
+        ]
+      },
+      {
+        "name": "get_address_tax_category",
+        "line": 706,
+        "args": [
+          "tax_category",
+          "billing_address",
+          "shipping_address"
+        ]
+      },
+      {
+        "name": "set_taxes",
+        "line": 721,
+        "args": [
+          "party",
+          "party_type",
+          "posting_date",
+          "company",
+          "customer_group",
+          "supplier_group",
+          "tax_category",
+          "billing_address",
+          "shipping_address",
+          "use_for_shopping_cart"
+        ]
+      },
+      {
+        "name": "get_payment_terms_template",
+        "line": 771,
+        "args": [
+          "party_name",
+          "party_type",
+          "company"
+        ]
+      },
+      {
+        "name": "validate_party_frozen_disabled",
+        "line": 797,
+        "args": [
+          "company",
+          "party_type",
+          "party_name"
+        ]
+      },
+      {
+        "name": "validate_account_party_type",
+        "line": 818,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get_dashboard_info",
+        "line": 832,
+        "args": [
+          "party_type",
+          "party",
+          "loyalty_program"
+        ]
+      },
+      {
+        "name": "get_party_shipping_address",
+        "line": 927,
+        "args": [
+          "doctype",
+          "name"
+        ]
+      },
+      {
+        "name": "get_partywise_advanced_payment_amount",
+        "line": 961,
+        "args": [
+          "party_type",
+          "posting_date",
+          "future_payment",
+          "company",
+          "party"
+        ]
+      },
+      {
+        "name": "get_default_contact",
+        "line": 1021,
+        "args": [
+          "doctype",
+          "name"
+        ]
+      },
+      {
+        "name": "add_party_account",
+        "line": 1049,
+        "args": [
+          "party_type",
+          "party",
+          "company",
+          "account"
+        ]
+      },
+      {
+        "name": "render_address",
+        "line": 1064,
+        "args": [
+          "address",
+          "check_permissions"
+        ]
+      },
+      {
+        "name": "validate_party_currency_before_merging",
+        "line": 1068,
+        "args": [
+          "party_type",
+          "old_party",
+          "new_party"
+        ]
+      },
+      {
+        "name": "generator",
+        "line": 511,
+        "args": []
+      },
+      {
+        "name": "generator",
+        "line": 519,
+        "args": []
+      },
+      {
+        "name": "generator",
+        "line": 543,
+        "args": []
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.contacts.doctype.address.address",
+      "frappe.core.doctype.user_permission.user_permission",
+      "frappe.model.utils",
+      "frappe.query_builder.functions",
+      "frappe.utils",
+      "erpnext",
+      "erpnext",
+      "erpnext.accounts.utils",
+      "erpnext.exceptions",
+      "erpnext.utilities.regional",
+      "frappe.contacts.doctype.address.address",
+      "erpnext.controllers.accounts_controller",
+      "erpnext.accounts.doctype.tax_rule.tax_rule",
+      "frappe.contacts.doctype.address.address"
+    ],
+    "file": "erpnext\\accounts\\party.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "PartyTestCase",
+        "line": 7,
+        "methods": [
+          "test_get_default_price_list_should_return_none_for_invalid_group"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "test_get_default_price_list_should_return_none_for_invalid_group",
+        "line": 8,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.tests",
+      "erpnext.accounts.party"
+    ],
+    "file": "erpnext\\accounts\\test_party.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "FiscalYearError",
+        "line": 47,
+        "methods": []
+      },
+      {
+        "name": "PaymentEntryUnlinkError",
+        "line": 51,
+        "methods": []
+      },
+      {
+        "name": "QueryPaymentLedger",
+        "line": 2144,
+        "methods": [
+          "__init__",
+          "reset",
+          "query_for_outstanding",
+          "get_voucher_outstandings"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_fiscal_year",
+        "line": 60,
+        "args": [
+          "date",
+          "fiscal_year",
+          "label",
+          "verbose",
+          "company",
+          "as_dict",
+          "boolean",
+          "raise_on_missing"
+        ]
+      },
+      {
+        "name": "get_fiscal_years",
+        "line": 85,
+        "args": [
+          "transaction_date",
+          "fiscal_year",
+          "label",
+          "verbose",
+          "company",
+          "as_dict",
+          "boolean",
+          "raise_on_missing"
+        ]
+      },
+      {
+        "name": "_get_fiscal_years",
+        "line": 133,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "get_fiscal_year_filter_field",
+        "line": 164,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "validate_fiscal_year",
+        "line": 181,
+        "args": [
+          "date",
+          "fiscal_year",
+          "company",
+          "label",
+          "doc"
+        ]
+      },
+      {
+        "name": "get_balance_on",
+        "line": 191,
+        "args": [
+          "account",
+          "date",
+          "party_type",
+          "party",
+          "company",
+          "in_account_currency",
+          "cost_center",
+          "ignore_account_permission",
+          "account_type",
+          "start_date",
+          "finance_book",
+          "include_default_fb_balances"
+        ]
+      },
+      {
+        "name": "get_count_on",
+        "line": 344,
+        "args": [
+          "account",
+          "fieldname",
+          "date"
+        ]
+      },
+      {
+        "name": "add_ac",
+        "line": 430,
+        "args": [
+          "args"
+        ]
+      },
+      {
+        "name": "add_cc",
+        "line": 462,
+        "args": [
+          "args"
+        ]
+      },
+      {
+        "name": "_build_dimensions_dict_for_exc_gain_loss",
+        "line": 487,
+        "args": [
+          "entry",
+          "active_dimensions"
+        ]
+      },
+      {
+        "name": "reconcile_against_document",
+        "line": 497,
+        "args": [
+          "args",
+          "skip_ref_details_update_for_pe",
+          "active_dimensions"
+        ]
+      },
+      {
+        "name": "check_if_advance_entry_modified",
+        "line": 569,
+        "args": [
+          "args"
+        ]
+      },
+      {
+        "name": "validate_allocated_amount",
+        "line": 641,
+        "args": [
+          "args"
+        ]
+      },
+      {
+        "name": "update_reference_in_journal_entry",
+        "line": 649,
+        "args": [
+          "d",
+          "journal_entry",
+          "do_not_save"
+        ]
+      },
+      {
+        "name": "update_reference_in_payment_entry",
+        "line": 721,
+        "args": [
+          "d",
+          "payment_entry",
+          "do_not_save",
+          "skip_ref_details_update_for_pe",
+          "dimensions_dict"
+        ]
+      },
+      {
+        "name": "get_reconciliation_effect_date",
+        "line": 802,
+        "args": [
+          "against_voucher_type",
+          "against_voucher",
+          "company",
+          "posting_date"
+        ]
+      },
+      {
+        "name": "cancel_exchange_gain_loss_journal",
+        "line": 825,
+        "args": [
+          "parent_doc",
+          "referenced_dt",
+          "referenced_dn"
+        ]
+      },
+      {
+        "name": "delete_exchange_gain_loss_journal",
+        "line": 850,
+        "args": [
+          "parent_doc",
+          "referenced_dt",
+          "referenced_dn"
+        ]
+      },
+      {
+        "name": "get_linked_exchange_gain_loss_journal",
+        "line": 875,
+        "args": [
+          "referenced_dt",
+          "referenced_dn",
+          "je_docstatus"
+        ]
+      },
+      {
+        "name": "cancel_common_party_journal",
+        "line": 902,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_accounting_ledgers_after_reference_removal",
+        "line": 942,
+        "args": [
+          "ref_type",
+          "ref_no",
+          "payment_name"
+        ]
+      },
+      {
+        "name": "remove_ref_from_advance_section",
+        "line": 996,
+        "args": [
+          "ref_doc",
+          "payment_name"
+        ]
+      },
+      {
+        "name": "unlink_ref_doc_from_payment_entries",
+        "line": 1013,
+        "args": [
+          "ref_doc",
+          "payment_name"
+        ]
+      },
+      {
+        "name": "remove_ref_doc_link_from_jv",
+        "line": 1020,
+        "args": [
+          "ref_type",
+          "ref_no",
+          "payment_name"
+        ]
+      },
+      {
+        "name": "convert_to_list",
+        "line": 1055,
+        "args": [
+          "result"
+        ]
+      },
+      {
+        "name": "remove_ref_doc_link_from_pe",
+        "line": 1062,
+        "args": [
+          "ref_type",
+          "ref_no",
+          "payment_name"
+        ]
+      },
+      {
+        "name": "get_company_default",
+        "line": 1143,
+        "args": [
+          "company",
+          "fieldname",
+          "ignore_validation"
+        ]
+      },
+      {
+        "name": "fix_total_debit_credit",
+        "line": 1156,
+        "args": []
+      },
+      {
+        "name": "get_currency_precision",
+        "line": 1179,
+        "args": []
+      },
+      {
+        "name": "get_fraction_units",
+        "line": 1188,
+        "args": [
+          "currency"
+        ]
+      },
+      {
+        "name": "get_zero_cutoff",
+        "line": 1199,
+        "args": [
+          "currency"
+        ]
+      },
+      {
+        "name": "get_held_invoices",
+        "line": 1211,
+        "args": [
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "get_outstanding_invoices",
+        "line": 1227,
+        "args": [
+          "party_type",
+          "party",
+          "account",
+          "common_filter",
+          "posting_date",
+          "min_outstanding",
+          "max_outstanding",
+          "accounting_dimensions",
+          "vouchers",
+          "limit",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "get_account_name",
+        "line": 1306,
+        "args": [
+          "account_type",
+          "root_type",
+          "is_group",
+          "account_currency",
+          "company"
+        ]
+      },
+      {
+        "name": "get_companies",
+        "line": 1322,
+        "args": []
+      },
+      {
+        "name": "get_children",
+        "line": 1328,
+        "args": [
+          "doctype",
+          "parent",
+          "company",
+          "is_root",
+          "include_disabled"
+        ]
+      },
+      {
+        "name": "get_account_balances",
+        "line": 1361,
+        "args": [
+          "accounts",
+          "company",
+          "finance_book",
+          "include_default_fb_balances"
+        ]
+      },
+      {
+        "name": "create_payment_gateway_account",
+        "line": 1395,
+        "args": [
+          "gateway",
+          "payment_channel",
+          "company"
+        ]
+      },
+      {
+        "name": "update_cost_center",
+        "line": 1454,
+        "args": [
+          "docname",
+          "cost_center_name",
+          "cost_center_number",
+          "company",
+          "merge"
+        ]
+      },
+      {
+        "name": "validate_field_number",
+        "line": 1474,
+        "args": [
+          "doctype_name",
+          "docname",
+          "number_value",
+          "company",
+          "field_name"
+        ]
+      },
+      {
+        "name": "get_autoname_with_number",
+        "line": 1491,
+        "args": [
+          "number_value",
+          "doc_title",
+          "company"
+        ]
+      },
+      {
+        "name": "parse_naming_series_variable",
+        "line": 1502,
+        "args": [
+          "doc",
+          "variable"
+        ]
+      },
+      {
+        "name": "get_coa",
+        "line": 1522,
+        "args": [
+          "doctype",
+          "parent",
+          "is_root",
+          "chart"
+        ]
+      },
+      {
+        "name": "update_gl_entries_after",
+        "line": 1540,
+        "args": [
+          "posting_date",
+          "posting_time",
+          "for_warehouses",
+          "for_items",
+          "warehouse_account",
+          "company"
+        ]
+      },
+      {
+        "name": "repost_gle_for_stock_vouchers",
+        "line": 1552,
+        "args": [
+          "stock_vouchers",
+          "posting_date",
+          "company",
+          "warehouse_account",
+          "repost_doc"
+        ]
+      },
+      {
+        "name": "_delete_pl_entries",
+        "line": 1603,
+        "args": [
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "_delete_adv_pl_entries",
+        "line": 1608,
+        "args": [
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "_delete_gl_entries",
+        "line": 1613,
+        "args": [
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "_delete_accounting_ledger_entries",
+        "line": 1618,
+        "args": [
+          "voucher_type",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "sort_stock_vouchers_by_posting_date",
+        "line": 1626,
+        "args": [
+          "stock_vouchers",
+          "company"
+        ]
+      },
+      {
+        "name": "get_future_stock_vouchers",
+        "line": 1654,
+        "args": [
+          "posting_date",
+          "posting_time",
+          "for_warehouses",
+          "for_items",
+          "company"
+        ]
+      },
+      {
+        "name": "get_voucherwise_gl_entries",
+        "line": 1684,
+        "args": [
+          "future_stock_vouchers",
+          "posting_date"
+        ]
+      },
+      {
+        "name": "compare_existing_and_expected_gle",
+        "line": 1715,
+        "args": [
+          "existing_gle",
+          "expected_gle",
+          "precision"
+        ]
+      },
+      {
+        "name": "get_stock_accounts",
+        "line": 1741,
+        "args": [
+          "company",
+          "voucher_type",
+          "voucher_no",
+          "accounts"
+        ]
+      },
+      {
+        "name": "get_stock_and_account_balance",
+        "line": 1778,
+        "args": [
+          "account",
+          "posting_date",
+          "company"
+        ]
+      },
+      {
+        "name": "get_journal_entry",
+        "line": 1815,
+        "args": [
+          "account",
+          "stock_adjustment_account",
+          "amount"
+        ]
+      },
+      {
+        "name": "check_and_delete_linked_reports",
+        "line": 1829,
+        "args": [
+          "report"
+        ]
+      },
+      {
+        "name": "create_err_and_its_journals",
+        "line": 1837,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "_auto_create_exchange_rate_revaluation_for",
+        "line": 1855,
+        "args": [
+          "frequency"
+        ]
+      },
+      {
+        "name": "auto_create_exchange_rate_revaluation_daily",
+        "line": 1875,
+        "args": []
+      },
+      {
+        "name": "auto_create_exchange_rate_revaluation_weekly",
+        "line": 1882,
+        "args": []
+      },
+      {
+        "name": "auto_create_exchange_rate_revaluation_monthly",
+        "line": 1889,
+        "args": []
+      },
+      {
+        "name": "get_payment_ledger_entries",
+        "line": 1896,
+        "args": [
+          "gl_entries",
+          "cancel"
+        ]
+      },
+      {
+        "name": "get_advance_ledger_entry",
+        "line": 1993,
+        "args": [
+          "gle",
+          "against_voucher_type",
+          "against_voucher_no",
+          "amount",
+          "cancel",
+          "base_amount",
+          "exchange_rate"
+        ]
+      },
+      {
+        "name": "create_payment_ledger_entry",
+        "line": 2022,
+        "args": [
+          "gl_entries",
+          "cancel",
+          "adv_adj",
+          "update_outstanding",
+          "from_repost",
+          "partial_cancel"
+        ]
+      },
+      {
+        "name": "update_voucher_outstanding",
+        "line": 2044,
+        "args": [
+          "voucher_type",
+          "voucher_no",
+          "account",
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "delink_original_entry",
+        "line": 2095,
+        "args": [
+          "pl_entry",
+          "partial_cancel"
+        ]
+      },
+      {
+        "name": "create_gain_loss_journal",
+        "line": 2397,
+        "args": [
+          "company",
+          "posting_date",
+          "party_type",
+          "party",
+          "party_account",
+          "gain_loss_account",
+          "exc_gain_loss",
+          "dr_or_cr",
+          "reverse_dr_or_cr",
+          "ref1_dt",
+          "ref1_dn",
+          "ref1_detail_no",
+          "ref2_dt",
+          "ref2_dn",
+          "ref2_detail_no",
+          "cost_center",
+          "dimensions"
+        ]
+      },
+      {
+        "name": "get_party_types_from_account_type",
+        "line": 2474,
+        "args": [
+          "account_type"
+        ]
+      },
+      {
+        "name": "get_advance_payment_doctypes",
+        "line": 2478,
+        "args": [
+          "payment_type"
+        ]
+      },
+      {
+        "name": "run_ledger_health_checks",
+        "line": 2491,
+        "args": []
+      },
+      {
+        "name": "sync_auto_reconcile_config",
+        "line": 2532,
+        "args": [
+          "auto_reconciliation_job_trigger"
+        ]
+      },
+      {
+        "name": "get_link_fields_grouped_by_option",
+        "line": 2567,
+        "args": [
+          "doctype"
+        ]
+      },
+      {
+        "name": "build_qb_match_conditions",
+        "line": 2578,
+        "args": [
+          "doctype",
+          "user"
+        ]
+      },
+      {
+        "name": "is_immutable_ledger_enabled",
+        "line": 2608,
+        "args": []
+      },
+      {
+        "name": "__init__",
+        "line": 2149,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "reset",
+        "line": 2163,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "query_for_outstanding",
+        "line": 2172,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get_voucher_outstandings",
+        "line": 2357,
+        "args": [
+          "self",
+          "vouchers",
+          "common_filter",
+          "posting_date",
+          "min_outstanding",
+          "max_outstanding",
+          "get_payments",
+          "get_invoices",
+          "accounting_dimensions",
+          "limit",
+          "voucher_no"
+        ]
+      },
+      {
+        "name": "get_account_type",
+        "line": 1914,
+        "args": [
+          "account"
+        ]
+      }
+    ],
+    "imports": [
+      "collections",
+      "json",
+      "typing",
+      "frappe",
+      "frappe.defaults",
+      "frappe",
+      "frappe.desk.reportview",
+      "frappe.model.meta",
+      "frappe.query_builder",
+      "frappe.query_builder.functions",
+      "frappe.query_builder.utils",
+      "frappe.utils",
+      "frappe.utils.caching",
+      "pypika",
+      "pypika.functions",
+      "pypika.terms",
+      "erpnext",
+      "erpnext.accounts.doctype.account.account",
+      "erpnext.accounts.doctype.accounting_dimension.accounting_dimension",
+      "erpnext.stock",
+      "erpnext.stock.utils",
+      "erpnext.stock.doctype.repost_item_valuation.repost_item_valuation",
+      "frappe.desk.treeview",
+      "frappe.desk.treeview",
+      "erpnext.accounts.doctype.payment_request.payment_request",
+      "erpnext.accounts.report.financial_statements",
+      "erpnext.setup.setup_wizard.operations.install_fixtures",
+      "erpnext.accounts.doctype.account.chart_of_accounts.chart_of_accounts",
+      "erpnext.accounts.general_ledger",
+      "erpnext.accounts.doctype.dunning.dunning",
+      "erpnext.accounts.general_ledger"
+    ],
+    "file": "erpnext\\accounts\\utils.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "ERPNextAddress",
+        "line": 10,
+        "methods": [
+          "validate",
+          "link_address",
+          "update_company_address",
+          "validate_reference",
+          "on_update"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_shipping_address",
+        "line": 55,
+        "args": [
+          "company",
+          "address"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 11,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "link_address",
+        "line": 18,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_company_address",
+        "line": 25,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_reference",
+        "line": 30,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_update",
+        "line": 39,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.contacts.doctype.address.address"
+    ],
+    "file": "erpnext\\accounts\\custom\\address.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\dashboard_chart_source\\__init__.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "get",
+        "line": 15,
+        "args": [
+          "chart_name",
+          "chart",
+          "no_cache",
+          "filters",
+          "from_date",
+          "to_date",
+          "timespan",
+          "time_interval",
+          "heatmap_year"
+        ]
+      },
+      {
+        "name": "build_result",
+        "line": 77,
+        "args": [
+          "account",
+          "dates",
+          "gl_entries"
+        ]
+      },
+      {
+        "name": "get_gl_entries",
+        "line": 106,
+        "args": [
+          "account",
+          "to_date"
+        ]
+      },
+      {
+        "name": "get_dates_from_timegrain",
+        "line": 122,
+        "args": [
+          "from_date",
+          "to_date",
+          "timegrain"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.utils",
+      "frappe.utils.dashboard",
+      "frappe.utils.dateutils",
+      "frappe.utils.nestedset"
+    ],
+    "file": "erpnext\\accounts\\dashboard_chart_source\\account_balance_timeline\\account_balance_timeline.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\dashboard_chart_source\\account_balance_timeline\\__init__.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "RootNotEditable",
+        "line": 13,
+        "methods": []
+      },
+      {
+        "name": "BalanceMismatchError",
+        "line": 17,
+        "methods": []
+      },
+      {
+        "name": "InvalidAccountMergeError",
+        "line": 21,
+        "methods": []
+      },
+      {
+        "name": "Account",
+        "line": 25,
+        "methods": [
+          "on_update",
+          "onload",
+          "autoname",
+          "validate",
+          "validate_parent_child_account_type",
+          "validate_parent",
+          "set_root_and_report_type",
+          "validate_receivable_payable_account_type",
+          "validate_root_details",
+          "validate_root_company_and_sync_account_to_children",
+          "validate_disabled",
+          "validate_group_or_ledger",
+          "validate_default_accounts_in_company",
+          "validate_frozen_accounts_modifier",
+          "validate_balance_must_be_debit_or_credit",
+          "validate_account_currency",
+          "validate_account_number",
+          "create_account_for_child_company",
+          "convert_group_to_ledger",
+          "convert_ledger_to_group",
+          "check_gle_exists",
+          "check_if_child_exists",
+          "validate_mandatory",
+          "on_trash"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_parent_account",
+        "line": 474,
+        "args": [
+          "doctype",
+          "txt",
+          "searchfield",
+          "start",
+          "page_len",
+          "filters"
+        ]
+      },
+      {
+        "name": "get_account_currency",
+        "line": 484,
+        "args": [
+          "account"
+        ]
+      },
+      {
+        "name": "on_doctype_update",
+        "line": 501,
+        "args": []
+      },
+      {
+        "name": "get_account_autoname",
+        "line": 505,
+        "args": [
+          "account_number",
+          "account_name",
+          "company"
+        ]
+      },
+      {
+        "name": "update_account_number",
+        "line": 518,
+        "args": [
+          "name",
+          "account_name",
+          "account_number",
+          "from_descendant"
+        ]
+      },
+      {
+        "name": "merge_account",
+        "line": 580,
+        "args": [
+          "old",
+          "new"
+        ]
+      },
+      {
+        "name": "get_root_company",
+        "line": 617,
+        "args": [
+          "company"
+        ]
+      },
+      {
+        "name": "sync_update_account_number_in_child",
+        "line": 623,
+        "args": [
+          "descendants",
+          "old_acc_name",
+          "account_name",
+          "account_number",
+          "old_acc_number"
+        ]
+      },
+      {
+        "name": "_ensure_idle_system",
+        "line": 637,
+        "args": []
+      },
+      {
+        "name": "get_company_default_account_fields",
+        "line": 665,
+        "args": []
+      },
+      {
+        "name": "on_update",
+        "line": 89,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "onload",
+        "line": 95,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "autoname",
+        "line": 102,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 107,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_parent_child_account_type",
+        "line": 124,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_parent",
+        "line": 138,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "set_root_and_report_type",
+        "line": 163,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_receivable_payable_account_type",
+        "line": 193,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_root_details",
+        "line": 211,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_root_company_and_sync_account_to_children",
+        "line": 220,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_disabled",
+        "line": 259,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_group_or_ledger",
+        "line": 267,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_default_accounts_in_company",
+        "line": 281,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_frozen_accounts_modifier",
+        "line": 303,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_balance_must_be_debit_or_credit",
+        "line": 314,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_account_currency",
+        "line": 333,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_account_number",
+        "line": 348,
+        "args": [
+          "self",
+          "account_number"
+        ]
+      },
+      {
+        "name": "create_account_for_child_company",
+        "line": 364,
+        "args": [
+          "self",
+          "parent_acc_name_map",
+          "descendants",
+          "parent_acc_name"
+        ]
+      },
+      {
+        "name": "convert_group_to_ledger",
+        "line": 425,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "convert_ledger_to_group",
+        "line": 436,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "check_gle_exists",
+        "line": 447,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "check_if_child_exists",
+        "line": 450,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_mandatory",
+        "line": 457,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_trash",
+        "line": 464,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "generator",
+        "line": 489,
+        "args": []
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.utils",
+      "frappe.utils.nestedset",
+      "erpnext",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.utils",
+      "erpnext.accounts.utils"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\account.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccount",
+        "line": 19,
+        "methods": [
+          "test_rename_account",
+          "test_merge_account",
+          "test_account_sync",
+          "test_add_account_to_a_group",
+          "test_account_rename_sync",
+          "test_account_currency_sync",
+          "test_child_company_account_rename_sync",
+          "test_validate_account_currency",
+          "test_account_balance"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "_make_test_records",
+        "line": 326,
+        "args": [
+          "verbose"
+        ]
+      },
+      {
+        "name": "get_inventory_account",
+        "line": 392,
+        "args": [
+          "company",
+          "warehouse"
+        ]
+      },
+      {
+        "name": "create_account",
+        "line": 402,
+        "args": []
+      },
+      {
+        "name": "test_rename_account",
+        "line": 20,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_merge_account",
+        "line": 52,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_account_sync",
+        "line": 132,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_add_account_to_a_group",
+        "line": 150,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_account_rename_sync",
+        "line": 161,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_account_currency_sync",
+        "line": 199,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_child_company_account_rename_sync",
+        "line": 249,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_validate_account_currency",
+        "line": 292,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_account_balance",
+        "line": 312,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "create_bank_account",
+        "line": 206,
+        "args": []
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.account.account",
+      "erpnext.stock",
+      "frappe.tests.utils",
+      "erpnext.accounts.doctype.journal_entry.test_journal_entry",
+      "erpnext.accounts.utils"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\test_account.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\account\\__init__.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "create_charts",
+        "line": 13,
+        "args": [
+          "company",
+          "chart_template",
+          "existing_company",
+          "custom_chart",
+          "from_coa_importer"
+        ]
+      },
+      {
+        "name": "add_suffix_if_duplicate",
+        "line": 77,
+        "args": [
+          "account_name",
+          "account_number",
+          "accounts"
+        ]
+      },
+      {
+        "name": "identify_is_group",
+        "line": 90,
+        "args": [
+          "child"
+        ]
+      },
+      {
+        "name": "get_chart",
+        "line": 102,
+        "args": [
+          "chart_template",
+          "existing_company"
+        ]
+      },
+      {
+        "name": "get_charts_for_country",
+        "line": 135,
+        "args": [
+          "country",
+          "with_standard"
+        ]
+      },
+      {
+        "name": "get_account_tree_from_existing_company",
+        "line": 170,
+        "args": [
+          "existing_company"
+        ]
+      },
+      {
+        "name": "build_account_tree",
+        "line": 196,
+        "args": [
+          "tree",
+          "parent",
+          "all_accounts"
+        ]
+      },
+      {
+        "name": "validate_bank_account",
+        "line": 228,
+        "args": [
+          "coa",
+          "bank_account"
+        ]
+      },
+      {
+        "name": "build_tree_from_json",
+        "line": 247,
+        "args": [
+          "chart_template",
+          "chart_data",
+          "from_coa_importer"
+        ]
+      },
+      {
+        "name": "get_chart_metadata_fields",
+        "line": 281,
+        "args": []
+      },
+      {
+        "name": "_get_chart_name",
+        "line": 138,
+        "args": [
+          "content"
+        ]
+      },
+      {
+        "name": "_import_accounts",
+        "line": 257,
+        "args": [
+          "children",
+          "parent"
+        ]
+      },
+      {
+        "name": "_import_accounts",
+        "line": 20,
+        "args": [
+          "children",
+          "parent",
+          "root_type",
+          "root_account"
+        ]
+      },
+      {
+        "name": "_get_account_names",
+        "line": 234,
+        "args": [
+          "account_master"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "os",
+      "frappe",
+      "frappe.utils",
+      "frappe.utils.nestedset",
+      "unidecode",
+      "erpnext.accounts.doctype.account.chart_of_accounts.verified",
+      "erpnext.accounts.doctype.account.chart_of_accounts.verified"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\chart_of_accounts.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\__init__.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "get",
+        "line": 8,
+        "args": []
+      }
+    ],
+    "imports": [
+      "frappe"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\verified\\standard_chart_of_accounts.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "get",
+        "line": 8,
+        "args": []
+      }
+    ],
+    "imports": [
+      "frappe"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\verified\\standard_chart_of_accounts_with_account_number.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [
+      "json",
+      "pathlib"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\verified\\syscohada_chart_of_accounts.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\account\\chart_of_accounts\\verified\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountingDimension",
+        "line": 20,
+        "methods": [
+          "before_insert",
+          "validate",
+          "validate_doctype",
+          "validate_document_type_change",
+          "validate_dimension_defaults",
+          "after_insert",
+          "on_trash",
+          "set_fieldname_and_label",
+          "on_update"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "make_dimension_in_accounting_doctypes",
+        "line": 111,
+        "args": [
+          "doc",
+          "doclist"
+        ]
+      },
+      {
+        "name": "add_dimension_to_budget_doctype",
+        "line": 148,
+        "args": [
+          "df",
+          "doc"
+        ]
+      },
+      {
+        "name": "delete_accounting_dimension",
+        "line": 180,
+        "args": [
+          "doc"
+        ]
+      },
+      {
+        "name": "disable_dimension",
+        "line": 213,
+        "args": [
+          "doc"
+        ]
+      },
+      {
+        "name": "toggle_disabling",
+        "line": 220,
+        "args": [
+          "doc"
+        ]
+      },
+      {
+        "name": "get_doctypes_with_dimensions",
+        "line": 240,
+        "args": []
+      },
+      {
+        "name": "get_accounting_dimensions",
+        "line": 244,
+        "args": [
+          "as_list",
+          "filters"
+        ]
+      },
+      {
+        "name": "get_checks_for_pl_and_bs_accounts",
+        "line": 261,
+        "args": []
+      },
+      {
+        "name": "get_dimension_with_children",
+        "line": 274,
+        "args": [
+          "doctype",
+          "dimensions"
+        ]
+      },
+      {
+        "name": "get_dimensions",
+        "line": 289,
+        "args": [
+          "with_cost_center_and_project"
+        ]
+      },
+      {
+        "name": "create_accounting_dimensions_for_doctype",
+        "line": 325,
+        "args": [
+          "doctype"
+        ]
+      },
+      {
+        "name": "before_insert",
+        "line": 40,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 43,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_doctype",
+        "line": 48,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_document_type_change",
+        "line": 70,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_dimension_defaults",
+        "line": 77,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "after_insert",
+        "line": 85,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_trash",
+        "line": 93,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "set_fieldname_and_label",
+        "line": 99,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_update",
+        "line": 106,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "frappe",
+      "frappe",
+      "frappe.custom.doctype.custom_field.custom_field",
+      "frappe.database.schema",
+      "frappe.model",
+      "frappe.model.document",
+      "frappe.utils",
+      "erpnext.accounts.doctype.repost_accounting_ledger.repost_accounting_ledger",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.accounting_dimension_detail.accounting_dimension_detail"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension\\accounting_dimension.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccountingDimension",
+        "line": 14,
+        "methods": [
+          "setUp",
+          "test_dimension_against_sales_invoice",
+          "test_dimension_against_journal_entry",
+          "test_mandatory",
+          "tearDown"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "create_dimension",
+        "line": 89,
+        "args": []
+      },
+      {
+        "name": "disable_dimension",
+        "line": 139,
+        "args": []
+      },
+      {
+        "name": "setUp",
+        "line": 15,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_dimension_against_sales_invoice",
+        "line": 18,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_dimension_against_journal_entry",
+        "line": 44,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_mandatory",
+        "line": 60,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "tearDown",
+        "line": 83,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe.tests",
+      "erpnext.accounts.doctype.journal_entry.test_journal_entry",
+      "erpnext.accounts.doctype.sales_invoice.test_sales_invoice"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension\\test_accounting_dimension.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountingDimensionDetail",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension_detail\\accounting_dimension_detail.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension_detail\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountingDimensionFilter",
+        "line": 10,
+        "methods": [
+          "before_save",
+          "validate",
+          "validate_applicable_accounts"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_dimension_filter_map",
+        "line": 71,
+        "args": []
+      },
+      {
+        "name": "build_map",
+        "line": 105,
+        "args": [
+          "map_object",
+          "dimension",
+          "account",
+          "filter_value",
+          "allow_or_restrict",
+          "is_mandatory"
+        ]
+      },
+      {
+        "name": "before_save",
+        "line": 32,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 38,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_applicable_accounts",
+        "line": 45,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.allowed_dimension.allowed_dimension",
+      "erpnext.accounts.doctype.applicable_on_account.applicable_on_account"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension_filter\\accounting_dimension_filter.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccountingDimensionFilter",
+        "line": 18,
+        "methods": [
+          "setUp",
+          "test_allowed_dimension_validation",
+          "test_mandatory_dimension_validation",
+          "tearDown"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "create_accounting_dimension_filter",
+        "line": 59,
+        "args": []
+      },
+      {
+        "name": "disable_dimension_filter",
+        "line": 101,
+        "args": []
+      },
+      {
+        "name": "setUp",
+        "line": 19,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_allowed_dimension_validation",
+        "line": 24,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_mandatory_dimension_validation",
+        "line": 34,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "tearDown",
+        "line": 47,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "erpnext.accounts.doctype.accounting_dimension.test_accounting_dimension",
+      "erpnext.accounts.doctype.sales_invoice.test_sales_invoice",
+      "erpnext.exceptions"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension_filter\\test_accounting_dimension_filter.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\accounting_dimension_filter\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "OverlapError",
+        "line": 10,
+        "methods": []
+      },
+      {
+        "name": "ClosedAccountingPeriod",
+        "line": 14,
+        "methods": []
+      },
+      {
+        "name": "AccountingPeriod",
+        "line": 18,
+        "methods": [
+          "validate",
+          "before_insert",
+          "autoname",
+          "validate_overlap",
+          "get_doctypes_for_closing",
+          "bootstrap_doctypes_for_closing"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "validate_accounting_period_on_doc_save",
+        "line": 96,
+        "args": [
+          "doc",
+          "method"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 38,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "before_insert",
+        "line": 41,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "autoname",
+        "line": 44,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_overlap",
+        "line": 48,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get_doctypes_for_closing",
+        "line": 73,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "bootstrap_doctypes_for_closing",
+        "line": 84,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.closed_document.closed_document"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_period\\accounting_period.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccountingPeriod",
+        "line": 18,
+        "methods": [
+          "test_overlap",
+          "test_accounting_period",
+          "test_accounting_period_exempted_role",
+          "tearDown"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "create_accounting_period",
+        "line": 98,
+        "args": []
+      },
+      {
+        "name": "test_overlap",
+        "line": 19,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_accounting_period",
+        "line": 33,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_accounting_period_exempted_role",
+        "line": 40,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "tearDown",
+        "line": 93,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.accounting_period.accounting_period",
+      "erpnext.accounts.doctype.sales_invoice.test_sales_invoice"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounting_period\\test_accounting_period.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\accounting_period\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountsSettings",
+        "line": 16,
+        "methods": [
+          "validate",
+          "validate_stale_days",
+          "enable_payment_schedule_in_print",
+          "validate_and_sync_auto_reconcile_config",
+          "validate_auto_tax_settings",
+          "drop_ar_sql_procedures"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "validate",
+        "line": 79,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_stale_days",
+        "line": 106,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "enable_payment_schedule_in_print",
+        "line": 112,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_and_sync_auto_reconcile_config",
+        "line": 127,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_auto_tax_settings",
+        "line": 141,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "drop_ar_sql_procedures",
+        "line": 152,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.custom.doctype.property_setter.property_setter",
+      "frappe.model.document",
+      "frappe.utils",
+      "erpnext.accounts.utils",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.report.accounts_receivable.accounts_receivable"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounts_settings\\accounts_settings.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccountsSettings",
+        "line": 7,
+        "methods": [
+          "tearDown",
+          "test_stale_days"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "tearDown",
+        "line": 8,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_stale_days",
+        "line": 15,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\accounts_settings\\test_accounts_settings.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\accounts_settings\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountCategory",
+        "line": 13,
+        "methods": [
+          "after_rename"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "import_account_categories",
+        "line": 58,
+        "args": [
+          "template_path"
+        ]
+      },
+      {
+        "name": "create_account_categories",
+        "line": 70,
+        "args": [
+          "categories"
+        ]
+      },
+      {
+        "name": "after_rename",
+        "line": 26,
+        "args": [
+          "self",
+          "old_name",
+          "new_name",
+          "merge"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "os",
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.financial_report_template.financial_report_engine"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account_category\\account_category.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "IntegrationTestAccountCategory",
+        "line": 14,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account_category\\test_account_category.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\account_category\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AccountClosingBalance",
+        "line": 16,
+        "methods": []
+      }
+    ],
+    "functions": [
+      {
+        "name": "make_closing_entries",
+        "line": 46,
+        "args": [
+          "closing_entries",
+          "voucher_name",
+          "company",
+          "closing_date"
+        ]
+      },
+      {
+        "name": "aggregate_with_last_account_closing_balance",
+        "line": 70,
+        "args": [
+          "entries",
+          "accounting_dimensions"
+        ]
+      },
+      {
+        "name": "generate_key",
+        "line": 93,
+        "args": [
+          "entry",
+          "accounting_dimensions"
+        ]
+      },
+      {
+        "name": "get_previous_closing_entries",
+        "line": 119,
+        "args": [
+          "company",
+          "closing_date",
+          "accounting_dimensions"
+        ]
+      },
+      {
+        "name": "set_amount_in_reporting_currency",
+        "line": 156,
+        "args": [
+          "cle",
+          "company",
+          "closing_date"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "frappe.utils",
+      "erpnext.accounts.doctype.accounting_dimension.accounting_dimension",
+      "erpnext.exceptions",
+      "erpnext.setup.utils",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account_closing_balance\\account_closing_balance.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAccountClosingBalance",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\account_closing_balance\\test_account_closing_balance.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\account_closing_balance\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AdvancePaymentLedgerEntry",
+        "line": 10,
+        "methods": [
+          "on_update"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "on_doctype_update",
+        "line": 41,
+        "args": []
+      },
+      {
+        "name": "on_update",
+        "line": 32,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.model.document",
+      "erpnext.accounts.utils",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\advance_payment_ledger_entry\\advance_payment_ledger_entry.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAdvancePaymentLedgerEntry",
+        "line": 20,
+        "methods": [
+          "setUp",
+          "tearDown",
+          "create_sales_order",
+          "create_purchase_order",
+          "test_so_advance_paid_and_currency_with_payment",
+          "test_so_advance_paid_and_currency_with_journal",
+          "test_po_advance_paid_and_currency_with_payment",
+          "test_po_advance_paid_and_currency_with_journal"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "setUp",
+        "line": 26,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "tearDown",
+        "line": 33,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "create_sales_order",
+        "line": 36,
+        "args": [
+          "self",
+          "qty",
+          "rate",
+          "currency",
+          "do_not_submit"
+        ]
+      },
+      {
+        "name": "create_purchase_order",
+        "line": 52,
+        "args": [
+          "self",
+          "qty",
+          "rate",
+          "currency",
+          "do_not_submit"
+        ]
+      },
+      {
+        "name": "test_so_advance_paid_and_currency_with_payment",
+        "line": 68,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_so_advance_paid_and_currency_with_journal",
+        "line": 101,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_po_advance_paid_and_currency_with_payment",
+        "line": 149,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_po_advance_paid_and_currency_with_journal",
+        "line": 182,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.payment_entry.test_payment_entry",
+      "erpnext.accounts.test.accounts_mixin",
+      "erpnext.buying.doctype.purchase_order.test_purchase_order",
+      "erpnext.selling.doctype.sales_order.test_sales_order"
+    ],
+    "file": "erpnext\\accounts\\doctype\\advance_payment_ledger_entry\\test_advance_payment_ledger_entry.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\advance_payment_ledger_entry\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AdvanceTaxesandCharges",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\advance_taxes_and_charges\\advance_taxes_and_charges.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\advance_taxes_and_charges\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AllowedDimension",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\allowed_dimension\\allowed_dimension.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\allowed_dimension\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AllowedToTransactWith",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\allowed_to_transact_with\\allowed_to_transact_with.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\allowed_to_transact_with\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "ApplicableOnAccount",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\applicable_on_account\\applicable_on_account.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\applicable_on_account\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "Bank",
+        "line": 12,
+        "methods": [
+          "onload",
+          "on_trash"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "onload",
+        "line": 32,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_trash",
+        "line": 36,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe.contacts.address_and_contact",
+      "frappe.model.document",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.bank_transaction_mapping.bank_transaction_mapping"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank\\bank.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "get_data",
+        "line": 4,
+        "args": []
+      }
+    ],
+    "imports": [
+      "frappe"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank\\bank_dashboard.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBank",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "unittest",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank\\test_bank.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankAccount",
+        "line": 15,
+        "methods": [
+          "onload",
+          "autoname",
+          "on_trash",
+          "validate",
+          "validate_account",
+          "validate_company",
+          "update_default_bank_account"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_party_bank_account",
+        "line": 91,
+        "args": [
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "get_default_company_bank_account",
+        "line": 99,
+        "args": [
+          "company",
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "get_bank_account_details",
+        "line": 114,
+        "args": [
+          "bank_account"
+        ]
+      },
+      {
+        "name": "onload",
+        "line": 43,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "autoname",
+        "line": 47,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_trash",
+        "line": 50,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 53,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_account",
+        "line": 58,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_company",
+        "line": 70,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_default_bank_account",
+        "line": 74,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.contacts.address_and_contact",
+      "frappe.model.document",
+      "frappe.utils",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account\\bank_account.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankAccount",
+        "line": 10,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account\\test_bank_account.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_account\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankAccountSubtype",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account_subtype\\bank_account_subtype.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankAccountSubtype",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "unittest",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account_subtype\\test_bank_account_subtype.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_account_subtype\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankAccountType",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account_type\\bank_account_type.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankAccountType",
+        "line": 9,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "unittest",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_account_type\\test_bank_account_type.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_account_type\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankClearance",
+        "line": 17,
+        "methods": [
+          "get_payment_entries",
+          "update_clearance_date"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_payment_entries_for_bank_clearance",
+        "line": 180,
+        "args": [
+          "from_date",
+          "to_date",
+          "account",
+          "bank_account",
+          "include_reconciled_entries",
+          "include_pos_transactions"
+        ]
+      },
+      {
+        "name": "get_payment_entries",
+        "line": 41,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_clearance_date",
+        "line": 91,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_entry",
+        "line": 96,
+        "args": [
+          "d"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "frappe.query_builder.custom",
+      "frappe.utils",
+      "pypika",
+      "erpnext",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.bank_clearance_detail.bank_clearance_detail"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_clearance\\bank_clearance.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankClearance",
+        "line": 21,
+        "methods": [
+          "setUpClass",
+          "test_bank_clearance",
+          "test_bank_clearance_with_loan",
+          "test_update_clearance_date_on_si"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "make_bank_account",
+        "line": 127,
+        "args": []
+      },
+      {
+        "name": "add_transactions",
+        "line": 140,
+        "args": []
+      },
+      {
+        "name": "make_payment_entry",
+        "line": 144,
+        "args": []
+      },
+      {
+        "name": "make_pos_sales_invoice",
+        "line": 163,
+        "args": []
+      },
+      {
+        "name": "setUpClass",
+        "line": 23,
+        "args": [
+          "cls"
+        ]
+      },
+      {
+        "name": "test_bank_clearance",
+        "line": 39,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_bank_clearance_with_loan",
+        "line": 48,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_update_clearance_date_on_si",
+        "line": 100,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "create_loan_masters",
+        "line": 57,
+        "args": []
+      },
+      {
+        "name": "make_loan",
+        "line": 74,
+        "args": []
+      }
+    ],
+    "imports": [
+      "unittest",
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.cost_center.test_cost_center",
+      "erpnext.accounts.doctype.mode_of_payment.test_mode_of_payment",
+      "erpnext.accounts.doctype.payment_entry.test_payment_entry",
+      "erpnext.accounts.doctype.purchase_invoice.test_purchase_invoice",
+      "erpnext.accounts.doctype.sales_invoice.test_sales_invoice",
+      "erpnext.stock.doctype.item.test_item",
+      "erpnext.stock.doctype.warehouse.test_warehouse",
+      "erpnext.tests.utils",
+      "erpnext.buying.doctype.supplier.test_supplier",
+      "erpnext.accounts.doctype.opening_invoice_creation_tool.test_opening_invoice_creation_tool",
+      "lending.loan_management.doctype.loan.test_loan"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_clearance\\test_bank_clearance.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_clearance\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankClearanceDetail",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_clearance_detail\\bank_clearance_detail.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_clearance_detail\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankGuarantee",
+        "line": 10,
+        "methods": [
+          "validate",
+          "on_submit"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_voucher_details",
+        "line": 59,
+        "args": [
+          "bank_guarantee_type",
+          "reference_name"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 45,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_submit",
+        "line": 49,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_guarantee\\bank_guarantee.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankGuarantee",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "unittest",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_guarantee\\test_bank_guarantee.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_guarantee\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankReconciliationTool",
+        "line": 25,
+        "methods": []
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_bank_transactions",
+        "line": 50,
+        "args": [
+          "bank_account",
+          "from_date",
+          "to_date"
+        ]
+      },
+      {
+        "name": "get_account_balance",
+        "line": 83,
+        "args": [
+          "bank_account",
+          "till_date",
+          "company"
+        ]
+      },
+      {
+        "name": "update_bank_transaction",
+        "line": 109,
+        "args": [
+          "bank_transaction_name",
+          "reference_number",
+          "party_type",
+          "party"
+        ]
+      },
+      {
+        "name": "create_journal_entry_bts",
+        "line": 137,
+        "args": [
+          "bank_transaction_name",
+          "reference_number",
+          "reference_date",
+          "posting_date",
+          "entry_type",
+          "second_account",
+          "mode_of_payment",
+          "party_type",
+          "party",
+          "allow_edit"
+        ]
+      },
+      {
+        "name": "create_payment_entry_bts",
+        "line": 296,
+        "args": [
+          "bank_transaction_name",
+          "reference_number",
+          "reference_date",
+          "party_type",
+          "party",
+          "posting_date",
+          "mode_of_payment",
+          "project",
+          "cost_center",
+          "allow_edit",
+          "company_bank_account"
+        ]
+      },
+      {
+        "name": "auto_reconcile_vouchers",
+        "line": 373,
+        "args": [
+          "bank_account",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date"
+        ]
+      },
+      {
+        "name": "start_auto_reconcile",
+        "line": 407,
+        "args": [
+          "bank_transactions",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date"
+        ]
+      },
+      {
+        "name": "get_auto_reconcile_message",
+        "line": 452,
+        "args": [
+          "partially_reconciled",
+          "reconciled"
+        ]
+      },
+      {
+        "name": "reconcile_vouchers",
+        "line": 474,
+        "args": [
+          "bank_transaction_name",
+          "vouchers"
+        ]
+      },
+      {
+        "name": "get_linked_payments",
+        "line": 489,
+        "args": [
+          "bank_transaction_name",
+          "document_types",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date"
+        ]
+      },
+      {
+        "name": "subtract_allocations",
+        "line": 518,
+        "args": [
+          "gl_account",
+          "vouchers"
+        ]
+      },
+      {
+        "name": "get_allocated_amount",
+        "line": 533,
+        "args": [
+          "voucher_allocated_amounts",
+          "voucher",
+          "gl_account"
+        ]
+      },
+      {
+        "name": "check_matching",
+        "line": 543,
+        "args": [
+          "bank_account",
+          "company",
+          "transaction",
+          "document_types",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date"
+        ]
+      },
+      {
+        "name": "get_queries",
+        "line": 588,
+        "args": [
+          "bank_account",
+          "company",
+          "transaction",
+          "document_types",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date",
+          "exact_match",
+          "common_filters"
+        ]
+      },
+      {
+        "name": "get_matching_queries",
+        "line": 628,
+        "args": [
+          "bank_account",
+          "company",
+          "transaction",
+          "document_types",
+          "exact_match",
+          "account_from_to",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date",
+          "common_filters"
+        ]
+      },
+      {
+        "name": "get_bt_matching_query",
+        "line": 688,
+        "args": [
+          "exact_match",
+          "transaction"
+        ]
+      },
+      {
+        "name": "get_pe_matching_query",
+        "line": 732,
+        "args": [
+          "exact_match",
+          "account_from_to",
+          "transaction",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date",
+          "common_filters"
+        ]
+      },
+      {
+        "name": "get_je_matching_query",
+        "line": 794,
+        "args": [
+          "exact_match",
+          "transaction",
+          "from_date",
+          "to_date",
+          "filter_by_reference_date",
+          "from_reference_date",
+          "to_reference_date",
+          "common_filters"
+        ]
+      },
+      {
+        "name": "get_si_matching_query",
+        "line": 861,
+        "args": [
+          "exact_match",
+          "currency",
+          "common_filters",
+          "transaction"
+        ]
+      },
+      {
+        "name": "get_pi_matching_query",
+        "line": 905,
+        "args": [
+          "exact_match",
+          "currency",
+          "common_filters"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "frappe",
+      "frappe",
+      "frappe.model.document",
+      "frappe.query_builder.custom",
+      "frappe.query_builder.functions",
+      "frappe.utils",
+      "erpnext",
+      "erpnext.accounts.doctype.bank_transaction.bank_transaction",
+      "erpnext.accounts.party",
+      "erpnext.accounts.report.bank_reconciliation_statement.bank_reconciliation_statement",
+      "erpnext.accounts.utils",
+      "erpnext.setup.utils",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_reconciliation_tool\\bank_reconciliation_tool.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankReconciliationTool",
+        "line": 18,
+        "methods": [
+          "setUp",
+          "tearDown",
+          "create_bank_account",
+          "test_auto_reconcile"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "setUp",
+        "line": 19,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "tearDown",
+        "line": 27,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "create_bank_account",
+        "line": 30,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_auto_reconcile",
+        "line": 52,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.bank_reconciliation_tool.bank_reconciliation_tool",
+      "erpnext.accounts.doctype.payment_entry.test_payment_entry",
+      "erpnext.accounts.test.accounts_mixin"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_reconciliation_tool\\test_bank_reconciliation_tool.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_reconciliation_tool\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankStatementImport",
+        "line": 27,
+        "methods": [
+          "__init__",
+          "validate",
+          "start_import"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "preprocess_mt940_content",
+        "line": 115,
+        "args": [
+          "content"
+        ]
+      },
+      {
+        "name": "convert_mt940_to_csv",
+        "line": 147,
+        "args": [
+          "data_import",
+          "mt940_file_path"
+        ]
+      },
+      {
+        "name": "get_preview_from_template",
+        "line": 212,
+        "args": [
+          "data_import",
+          "import_file",
+          "google_sheets_url"
+        ]
+      },
+      {
+        "name": "form_start_import",
+        "line": 219,
+        "args": [
+          "data_import"
+        ]
+      },
+      {
+        "name": "download_errored_template",
+        "line": 225,
+        "args": [
+          "data_import_name"
+        ]
+      },
+      {
+        "name": "download_import_log",
+        "line": 231,
+        "args": [
+          "data_import_name"
+        ]
+      },
+      {
+        "name": "is_mt940_format",
+        "line": 235,
+        "args": [
+          "content"
+        ]
+      },
+      {
+        "name": "parse_data_from_template",
+        "line": 241,
+        "args": [
+          "raw_data"
+        ]
+      },
+      {
+        "name": "start_import",
+        "line": 254,
+        "args": [
+          "data_import",
+          "bank_account",
+          "import_file_path",
+          "google_sheets_url",
+          "bank",
+          "template_options"
+        ]
+      },
+      {
+        "name": "update_mapping_db",
+        "line": 286,
+        "args": [
+          "bank",
+          "template_options"
+        ]
+      },
+      {
+        "name": "add_bank_account",
+        "line": 298,
+        "args": [
+          "data",
+          "bank_account"
+        ]
+      },
+      {
+        "name": "write_files",
+        "line": 315,
+        "args": [
+          "import_file",
+          "data"
+        ]
+      },
+      {
+        "name": "write_xlsx",
+        "line": 330,
+        "args": [
+          "data",
+          "sheet_name",
+          "wb",
+          "column_widths",
+          "file_path"
+        ]
+      },
+      {
+        "name": "get_import_status",
+        "line": 367,
+        "args": [
+          "docname"
+        ]
+      },
+      {
+        "name": "get_import_logs",
+        "line": 395,
+        "args": [
+          "docname"
+        ]
+      },
+      {
+        "name": "upload_bank_statement",
+        "line": 408,
+        "args": []
+      },
+      {
+        "name": "__init__",
+        "line": 55,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 58,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "start_import",
+        "line": 79,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "replace_statement_number",
+        "line": 129,
+        "args": [
+          "match"
+        ]
+      }
+    ],
+    "imports": [
+      "csv",
+      "io",
+      "json",
+      "re",
+      "datetime",
+      "frappe",
+      "mt940",
+      "openpyxl",
+      "frappe",
+      "frappe.core.doctype.data_import.data_import",
+      "frappe.core.doctype.data_import.importer",
+      "frappe.query_builder.functions",
+      "frappe.utils.background_jobs",
+      "frappe.utils.file_manager",
+      "frappe.utils.xlsxutils",
+      "openpyxl.styles",
+      "openpyxl.utils",
+      "typing",
+      "frappe.types",
+      "frappe.utils.background_jobs",
+      "frappe.utils.scheduler"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_statement_import\\bank_statement_import.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankStatementImport",
+        "line": 12,
+        "methods": [
+          "test_preprocess_mt940_content_with_long_statement_number",
+          "test_preprocess_mt940_content_with_normal_statement_number",
+          "test_preprocess_mt940_content_without_sequence_number",
+          "test_preprocess_mt940_content_multiple_occurrences",
+          "test_preprocess_mt940_content_edge_cases",
+          "test_preprocess_mt940_content_with_full_mt940_document",
+          "test_is_mt940_format_detection",
+          "test_preprocess_mt940_content_boundary_conditions",
+          "test_preprocess_mt940_content_real_world_case",
+          "test_preprocess_mt940_content_whitespace_variants"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "test_preprocess_mt940_content_with_long_statement_number",
+        "line": 15,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_with_normal_statement_number",
+        "line": 23,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_without_sequence_number",
+        "line": 35,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_multiple_occurrences",
+        "line": 43,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_edge_cases",
+        "line": 52,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_with_full_mt940_document",
+        "line": 64,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_is_mt940_format_detection",
+        "line": 85,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_boundary_conditions",
+        "line": 110,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_real_world_case",
+        "line": 129,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_preprocess_mt940_content_whitespace_variants",
+        "line": 192,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "unittest",
+      "erpnext.accounts.doctype.bank_statement_import.bank_statement_import"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_statement_import\\test_bank_statement_import.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_statement_import\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "AutoMatchParty",
+        "line": 7,
+        "methods": [
+          "__init__",
+          "get",
+          "match"
+        ]
+      },
+      {
+        "name": "AutoMatchbyAccountIBAN",
+        "line": 38,
+        "methods": [
+          "__init__",
+          "get",
+          "match",
+          "match_account_in_party",
+          "get_or_filters"
+        ]
+      },
+      {
+        "name": "AutoMatchbyPartyNameDescription",
+        "line": 91,
+        "methods": [
+          "__init__",
+          "get",
+          "match",
+          "match_party_name_desc_in_party",
+          "fuzzy_search_and_return_result",
+          "process_fuzzy_result"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_parties_in_order",
+        "line": 170,
+        "args": [
+          "deposit"
+        ]
+      },
+      {
+        "name": "__init__",
+        "line": 15,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get",
+        "line": 18,
+        "args": [
+          "self",
+          "key"
+        ]
+      },
+      {
+        "name": "match",
+        "line": 21,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "__init__",
+        "line": 39,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get",
+        "line": 42,
+        "args": [
+          "self",
+          "key"
+        ]
+      },
+      {
+        "name": "match",
+        "line": 45,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "match_account_in_party",
+        "line": 51,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get_or_filters",
+        "line": 78,
+        "args": [
+          "self",
+          "party"
+        ]
+      },
+      {
+        "name": "__init__",
+        "line": 92,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get",
+        "line": 95,
+        "args": [
+          "self",
+          "key"
+        ]
+      },
+      {
+        "name": "match",
+        "line": 98,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "match_party_name_desc_in_party",
+        "line": 105,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "fuzzy_search_and_return_result",
+        "line": 130,
+        "args": [
+          "self",
+          "party",
+          "names",
+          "field"
+        ]
+      },
+      {
+        "name": "process_fuzzy_result",
+        "line": 142,
+        "args": [
+          "self",
+          "result"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.utils",
+      "rapidfuzz",
+      "rapidfuzz.utils"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\auto_match_party.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankTransaction",
+        "line": 11,
+        "methods": [
+          "before_validate",
+          "on_discard",
+          "validate",
+          "validate_currency",
+          "set_status",
+          "validate_duplicate_references",
+          "update_allocated_amount",
+          "delink_old_payment_entries",
+          "before_submit",
+          "before_update_after_submit",
+          "on_cancel",
+          "add_payment_entries",
+          "allocate_payment_entries",
+          "remove_payment_entries",
+          "remove_payment_entry",
+          "delink_payment_entry",
+          "clear_linked_payment_entry",
+          "update_linked_bank_transaction",
+          "auto_set_party",
+          "validate_included_fee",
+          "handle_excluded_fee"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "get_doctypes_for_bank_reconciliation",
+        "line": 353,
+        "args": []
+      },
+      {
+        "name": "get_clearance_details",
+        "line": 358,
+        "args": [
+          "transaction",
+          "payment_entry",
+          "bt_allocations",
+          "gl_entries",
+          "gl_bank_account"
+        ]
+      },
+      {
+        "name": "get_related_bank_gl_entries",
+        "line": 418,
+        "args": [
+          "docs"
+        ]
+      },
+      {
+        "name": "get_total_allocated_amount",
+        "line": 455,
+        "args": [
+          "docs"
+        ]
+      },
+      {
+        "name": "get_reconciled_bank_transactions",
+        "line": 501,
+        "args": [
+          "doctype",
+          "docname"
+        ]
+      },
+      {
+        "name": "remove_from_bank_transaction",
+        "line": 509,
+        "args": [
+          "doctype",
+          "docname"
+        ]
+      },
+      {
+        "name": "before_validate",
+        "line": 49,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_discard",
+        "line": 53,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate",
+        "line": 56,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_currency",
+        "line": 61,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "set_status",
+        "line": 80,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_duplicate_references",
+        "line": 89,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_allocated_amount",
+        "line": 105,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "delink_old_payment_entries",
+        "line": 114,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "before_submit",
+        "line": 127,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "before_update_after_submit",
+        "line": 134,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "on_cancel",
+        "line": 141,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "add_payment_entries",
+        "line": 147,
+        "args": [
+          "self",
+          "vouchers"
+        ]
+      },
+      {
+        "name": "allocate_payment_entries",
+        "line": 162,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "remove_payment_entries",
+        "line": 227,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "remove_payment_entry",
+        "line": 233,
+        "args": [
+          "self",
+          "payment_entry"
+        ]
+      },
+      {
+        "name": "delink_payment_entry",
+        "line": 238,
+        "args": [
+          "self",
+          "payment_entry"
+        ]
+      },
+      {
+        "name": "clear_linked_payment_entry",
+        "line": 244,
+        "args": [
+          "self",
+          "payment_entry",
+          "clearance_date"
+        ]
+      },
+      {
+        "name": "update_linked_bank_transaction",
+        "line": 263,
+        "args": [
+          "self",
+          "bank_transaction_name",
+          "allocated_amount"
+        ]
+      },
+      {
+        "name": "auto_set_party",
+        "line": 294,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_included_fee",
+        "line": 317,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "handle_excluded_fee",
+        "line": 327,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe",
+      "frappe.model.docstatus",
+      "frappe.model.document",
+      "frappe.utils",
+      "typing",
+      "frappe.types",
+      "erpnext.accounts.doctype.bank_transaction_payments.bank_transaction_payments",
+      "erpnext.accounts.doctype.bank_transaction.auto_match_party"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\bank_transaction.py"
+  },
+  {
+    "classes": [],
+    "functions": [
+      {
+        "name": "upload_bank_statement",
+        "line": 13,
+        "args": []
+      },
+      {
+        "name": "create_bank_entries",
+        "line": 38,
+        "args": [
+          "columns",
+          "data",
+          "bank_account"
+        ]
+      },
+      {
+        "name": "get_header_mapping",
+        "line": 65,
+        "args": [
+          "columns",
+          "bank_account"
+        ]
+      },
+      {
+        "name": "get_bank_mapping",
+        "line": 76,
+        "args": [
+          "bank_account"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "frappe",
+      "frappe.utils",
+      "frappe.utils.dateutils",
+      "frappe.utils.csvutils",
+      "frappe.utils.xlsxutils"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\bank_transaction_upload.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestAutoMatchParty",
+        "line": 14,
+        "methods": [
+          "setUpClass",
+          "tearDownClass",
+          "test_match_by_account_number",
+          "test_match_by_iban",
+          "test_match_by_party_name",
+          "test_match_by_description",
+          "test_skip_match_if_multiple_close_results"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "create_supplier_for_match",
+        "line": 89,
+        "args": [
+          "supplier_name",
+          "iban",
+          "account_no"
+        ]
+      },
+      {
+        "name": "create_bank_transaction",
+        "line": 125,
+        "args": [
+          "description",
+          "withdrawal",
+          "deposit",
+          "transaction_id",
+          "party_name",
+          "account_no",
+          "iban"
+        ]
+      },
+      {
+        "name": "setUpClass",
+        "line": 16,
+        "args": [
+          "cls"
+        ]
+      },
+      {
+        "name": "tearDownClass",
+        "line": 23,
+        "args": [
+          "cls"
+        ]
+      },
+      {
+        "name": "test_match_by_account_number",
+        "line": 27,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_match_by_iban",
+        "line": 39,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_match_by_party_name",
+        "line": 51,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_match_by_description",
+        "line": 62,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_skip_match_if_multiple_close_results",
+        "line": 73,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.tests",
+      "frappe.utils",
+      "erpnext.accounts.doctype.bank_transaction.test_bank_transaction"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\test_auto_match_party.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankTransaction",
+        "line": 27,
+        "methods": [
+          "setUp",
+          "test_linked_payments",
+          "test_reconcile",
+          "test_cancel_voucher",
+          "test_debit_credit_output",
+          "test_already_reconciled",
+          "test_clear_sales_invoice",
+          "test_matching_loan_repayment"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "create_bank_account",
+        "line": 220,
+        "args": [
+          "bank_name",
+          "gl_account",
+          "bank_account_name"
+        ]
+      },
+      {
+        "name": "create_gl_account",
+        "line": 248,
+        "args": [
+          "gl_account_name"
+        ]
+      },
+      {
+        "name": "add_transactions",
+        "line": 262,
+        "args": [
+          "bank_account"
+        ]
+      },
+      {
+        "name": "add_vouchers",
+        "line": 324,
+        "args": [
+          "gl_account"
+        ]
+      },
+      {
+        "name": "create_loan_and_repayment",
+        "line": 439,
+        "args": []
+      },
+      {
+        "name": "setUp",
+        "line": 28,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_linked_payments",
+        "line": 42,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_reconcile",
+        "line": 56,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_cancel_voucher",
+        "line": 87,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_debit_credit_output",
+        "line": 111,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_already_reconciled",
+        "line": 125,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_clear_sales_invoice",
+        "line": 164,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_matching_loan_repayment",
+        "line": 190,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "json",
+      "frappe",
+      "frappe",
+      "frappe.model.docstatus",
+      "frappe.tests",
+      "erpnext.accounts.doctype.bank_reconciliation_tool.bank_reconciliation_tool",
+      "erpnext.accounts.doctype.mode_of_payment.test_mode_of_payment",
+      "erpnext.accounts.doctype.payment_entry.test_payment_entry",
+      "erpnext.accounts.doctype.pos_profile.test_pos_profile",
+      "erpnext.accounts.doctype.purchase_invoice.test_purchase_invoice",
+      "erpnext.accounts.doctype.sales_invoice.test_sales_invoice",
+      "erpnext.tests.utils",
+      "lending.loan_management.doctype.loan.test_loan",
+      "lending.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual",
+      "erpnext.setup.doctype.employee.test_employee",
+      "lending.loan_management.doctype.loan.test_loan"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\test_bank_transaction.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBankTransactionFees",
+        "line": 8,
+        "methods": [
+          "test_included_fee_throws",
+          "test_included_fee_allows_equal",
+          "test_included_fee_allows_for_deposit",
+          "test_excluded_fee_noop_when_zero",
+          "test_excluded_fee_throws_when_exceeds_deposit",
+          "test_excluded_fee_throws_when_both_deposit_and_withdrawal_are_set",
+          "test_excluded_fee_deducts_from_deposit",
+          "test_excluded_fee_can_reduce_an_incoming_payment_to_zero",
+          "test_excluded_fee_increases_outgoing_payment",
+          "test_excluded_fee_turns_zero_amount_into_withdrawal"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "test_included_fee_throws",
+        "line": 9,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_included_fee_allows_equal",
+        "line": 18,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_included_fee_allows_for_deposit",
+        "line": 27,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_noop_when_zero",
+        "line": 36,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_throws_when_exceeds_deposit",
+        "line": 52,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_throws_when_both_deposit_and_withdrawal_are_set",
+        "line": 61,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_deducts_from_deposit",
+        "line": 71,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_can_reduce_an_incoming_payment_to_zero",
+        "line": 87,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_increases_outgoing_payment",
+        "line": 103,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "test_excluded_fee_turns_zero_amount_into_withdrawal",
+        "line": 119,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "frappe",
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\test_bank_transaction_fees.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankTransactionMapping",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction_mapping\\bank_transaction_mapping.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction_mapping\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BankTransactionPayments",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction_payments\\bank_transaction_payments.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bank_transaction_payments\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BisectAccountingStatements",
+        "line": 16,
+        "methods": [
+          "validate",
+          "validate_dates",
+          "bfs",
+          "dfs",
+          "build_tree",
+          "get_report_summary",
+          "update_node",
+          "current_node_has_summary_info",
+          "fetch_summary_info_from_current_node",
+          "fetch_or_calculate",
+          "bisect_left",
+          "bisect_right",
+          "move_up"
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "name": "validate",
+        "line": 37,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "validate_dates",
+        "line": 40,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "bfs",
+        "line": 48,
+        "args": [
+          "self",
+          "from_date",
+          "to_date"
+        ]
+      },
+      {
+        "name": "dfs",
+        "line": 86,
+        "args": [
+          "self",
+          "from_date",
+          "to_date"
+        ]
+      },
+      {
+        "name": "build_tree",
+        "line": 125,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "get_report_summary",
+        "line": 148,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "update_node",
+        "line": 162,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "current_node_has_summary_info",
+        "line": 170,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "fetch_summary_info_from_current_node",
+        "line": 174,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "fetch_or_calculate",
+        "line": 180,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "bisect_left",
+        "line": 188,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "bisect_right",
+        "line": 202,
+        "args": [
+          "self"
+        ]
+      },
+      {
+        "name": "move_up",
+        "line": 216,
+        "args": [
+          "self"
+        ]
+      }
+    ],
+    "imports": [
+      "datetime",
+      "collections",
+      "math",
+      "frappe",
+      "dateutil.relativedelta",
+      "frappe",
+      "frappe.model.document",
+      "frappe.utils",
+      "frappe.utils.data",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bisect_accounting_statements\\bisect_accounting_statements.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBisectAccountingStatements",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bisect_accounting_statements\\test_bisect_accounting_statements.py"
+  },
+  {
+    "classes": [],
+    "functions": [],
+    "imports": [],
+    "file": "erpnext\\accounts\\doctype\\bisect_accounting_statements\\__init__.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "BisectNodes",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.model.document",
+      "typing",
+      "frappe.types"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bisect_nodes\\bisect_nodes.py"
+  },
+  {
+    "classes": [
+      {
+        "name": "TestBisectNodes",
+        "line": 8,
+        "methods": []
+      }
+    ],
+    "functions": [],
+    "imports": [
+      "frappe.tests"
+    ],
+    "file": "erpnext\\accounts\\doctype\\bisect_nodes\\test_bisect_nodes.py"
+  }
+]
